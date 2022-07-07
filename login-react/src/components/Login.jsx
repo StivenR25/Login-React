@@ -36,7 +36,7 @@ export const Login = () => {
 
       
       <form id='form-login'>
-      <h1>LOGIN</h1>
+      <h1>Iniciar Sesión</h1>
         <div className="form-control">
           <input type="text" id='txtcor' onChange={(e) => setcor(e.target.value)} required />
           <label for="">Correo electronico</label>
@@ -46,7 +46,7 @@ export const Login = () => {
           <label for="">Contraseña</label>
         </div><br />
 
-        <input type="submit" className="btn" value="Login" onClick={ iniciarSesion} />
+        <input type="submit" className="btn" value="Enviar" onClick={ iniciarSesion} />
 
       </form>
     { miLogin === "true" && <Menu cor={cor} />}
