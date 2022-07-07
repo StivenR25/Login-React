@@ -6,9 +6,9 @@ const Menu = (props) => {
 
     document.getElementById('caja_menu').style.display = 'none';
     document.getElementById('form-login').style.display = 'block';
-    document.getElementById("txtcor").value = '';
+    document.getElementById("txtusu").value = '';
     document.getElementById("txtpas").value = '';
-    document.getElementById("txtcor").focus();
+    document.getElementById("txtusu").focus();
   }
 
   return (
@@ -18,7 +18,7 @@ const Menu = (props) => {
       <div id="caja_menu" style={{ textAlign: "center" }}>
 
         <strong className="h3">
-          Bienvenido Usuario con Correo: {props.cor}
+          Bienvenido Usuario: {props.usu}
         </strong>
 
         <nav style={{ marginTop: 20 }}>
