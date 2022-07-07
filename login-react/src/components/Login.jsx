@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+// sirve para importar las distintas carpetas que se usaran en este modulo
 import Menu from './Menu';
-
 import '../logincss.css';
 import '../jslogin'
 
@@ -8,7 +8,7 @@ export const Login = () => {
   const [miLogin, setMilogin] = useState("false");
   const [cor, setcor] = useState("");
   const [pas, setpas] = useState("");
-
+// esta funcion es la encargada de autentificar el correo y la contraseña para poder avanzar
   function iniciarSesion(e) {
     e.preventDefault();
     var txtcor = document.getElementById("txtcor").value;
